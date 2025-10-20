@@ -1,0 +1,95 @@
+%-------------------------
+% Resume in Latex
+% Author : Mohammed Hany
+%-------------------------
+\documentclass[a4paper,13pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[a4paper, top=1.2cm, bottom=1.2cm, left=1.2cm, right=1.2cm]{geometry}
+
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage{marvosym}
+\usepackage{latexsym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+% Font
+\usepackage[default]{lato}
+
+%-------------------------
+% Page Style
+%-------------------------
+\pagestyle{fancy}
+\fancyhf{} % clear header/footer
+\fancyfoot{} % no page numbers
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%-------------------------
+% Layout Tweaks
+%-------------------------
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{20pt}
+\setlength{\tabcolsep}{0in}
+\raggedbottom
+\raggedright
+\urlstyle{same}
+
+%-------------------------
+% Section Formatting
+%-------------------------
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+%-------------------------
+% ATS Optimization
+%-------------------------
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+%-------------------------
+% Document Starts
+%-------------------------
+\begin{document}
+\include{custom-commands}
+
+%-------------------------------------------%
+%%%%%%  RESUME STARTS HERE  %%%%%
+%-------------------------------------------%
+
+%----------HEADING----------%
+\input{src/heading}
+
+%-----------EDUCATION-----------%
+\input{src/education}
+
+%-----------INTERNSHIPS / EXPERIENCE-----------%
+\input{src/Internships}
+
+%-----------PROJECTS-----------%
+\input{src/projects}
+
+%-----------TECHNICAL SKILLS-----------%
+\input{src/Technical Skills}
+%-----------ACHIEVEMENTS-----------%
+\input{src/achievements}
+
+%-----------RELEVANT COURSEWORK-----------%
+\input{src/Relevant Coursework}
+
+
+%-----------SOCIAL ENGAGEMENTS / LEADERSHIP-----------%
+\input{src/socialEngagements}
+
+%-------------------------------------------%
+\end{document}
