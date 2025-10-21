@@ -1,6 +1,7 @@
 %-------------------------
 % Resume in Latex
 % Author : Mohammed Hany
+% Enhanced By : Yusuf Hussien
 %-------------------------
 \documentclass[a4paper,13pt]{article}
 
@@ -61,35 +62,34 @@
 % Document Starts
 %-------------------------
 \begin{document}
-\include{custom-commands}
+\include{style}
 
 %-------------------------------------------%
-%%%%%%  RESUME STARTS HERE  %%%%%
+%----RESUME STARTS HERE ---%
 %-------------------------------------------%
 
 %----------HEADING----------%
-\input{src/heading}
+\input{sections/heading}
+
+%----------SUMMARY----------%
+\input{sections/summary}
 
 %-----------EDUCATION-----------%
-\input{src/education}
+\input{sections/education}
 
-%-----------INTERNSHIPS / EXPERIENCE-----------%
-\input{src/Internships}
+%-----------EXPERIENCE-----------%
+\input{sections/experience}
 
 %-----------PROJECTS-----------%
-\input{src/projects}
+\input{sections/projects}
 
 %-----------TECHNICAL SKILLS-----------%
-\input{src/Technical Skills}
+\input{sections/skills}
 %-----------ACHIEVEMENTS-----------%
-\input{src/achievements}
+\input{sections/achievements}
 
-%-----------RELEVANT COURSEWORK-----------%
-\input{src/Relevant Coursework}
-
-
-%-----------SOCIAL ENGAGEMENTS / LEADERSHIP-----------%
-\input{src/socialEngagements}
+%-----------Languages-----------%
+\input{sections/languages}
 
 %-------------------------------------------%
 \end{document}

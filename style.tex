@@ -1,0 +1,51 @@
+% Item formatting
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}  % Reduced from -2pt to -3pt
+  }
+}
+
+% Subheading formatting
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item  % Reduced from -2pt to -3pt
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}  % Reduced from -2pt
+}
+
+% Sub-subheading formatting
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+    \begin{tabular*}{0.87\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}  % Reduced from -3pt
+}
+
+% Project heading formatting
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.87\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small\textit{#2} \\
+    \end{tabular*}\vspace{-7pt}  % Reduced from -5pt
+}
+
+% Sub-item formatting
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}  % Reduced from -2pt
+
+% List environment commands
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-6pt}}  % Reduced from -8pt
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}  % Reduced from -4pt
+
+% Section separation
+\newcommand{\sectionSeparation}{\vspace{-7pt}}  % Reduced from -8pt
+
+% Line spacing
+\linespread{1.0009}  % Slightly tighter from 1.1
+
+% Color definition for icons
+\definecolor{Black}{RGB}{0, 0, 0}
+\newcommand{\seticon}[1]{\textcolor{Black}{\csname #1\endcsname}}
