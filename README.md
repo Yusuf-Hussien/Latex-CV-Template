@@ -64,5 +64,5 @@ A professional and elegant **CV template** built using **LaTeX**, designed for u
 ## 📬 License
 
 This project is open-source
-- Author [Mohamed Hany](linkedin.com/in/mohammedhanymaher)
-- Enhanced By [Yusuf Hussien](linkedin.com/in/yusuf-7ussien)
+- Author [Mohamed Hany](https://linkedin.com/in/mohammedhanymaher)
+- Enhanced By [Yusuf Hussien](https://linkedin.com/in/yusuf-7ussien)
